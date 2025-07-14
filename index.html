@@ -80,7 +80,56 @@
       color: #777;
     }
   </style>
-</head>
+<style>
+/* Responsive layout styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel, .shade-preview, .contact-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .shade-swatch {
+        display: inline-block;
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+    }
+}
+</style></head>
 <body>
 <nav style="background-color: #800000; padding: 15px 0; text-align: center; font-family: 'Georgia', serif;">
 <a href="#home" style="color: #fff8dc; margin: 0 20px; text-decoration: none; font-weight: bold;">Home</a>
@@ -88,18 +137,15 @@
 <a href="#exterior-shades" style="color: #fff8dc; margin: 0 20px; text-decoration: none; font-weight: bold;">Exterior Shades</a>
 <!--<a href="#contact" style="color: #fff8dc; margin: 0 20px; text-decoration: none; font-weight: bold;">Contact</a>-->
 </nav>
-
 <!--<header>
 <img alt="asian chromatic logo" src="ac1.jpeg" style="height:200px; text-align: left; margin-bottom: 10px;"/>
 </header>-->
-  
 <!--<h1 style="font-style: italic; font-size: 2.5rem;">asian chromatic</h1>
 <p>Interior &amp; Exterior Paint Shades</p>
 </header><section id="home" style="padding: 40px 20px; background-color: #fffaf0; text-align: center; font-family: 'Georgia', serif;">-->
-
-<section id="home" style="padding: 40px 20px; background-color: #fffaf0; text-align: center; font-family: 'Georgia', serif;">  
+<section id="home" style="padding: 40px 20px; background-color: #fffaf0; text-align: center; font-family: 'Georgia', serif;">
 <img alt="asian chromatic logo" src="ac1.jpeg" style="height:200px; text-align: left; margin-bottom: 10px;"/>
-<h1 style="font-style: italic; font-size: 2.5rem; color: #800000; margin-bottom: 10px;">Welcome to asian chromatic</span></h1>
+<h1 style="font-style: italic; font-size: 2.5rem; color: #800000; margin-bottom: 10px;">Welcome to asian chromatic</h1>
 <h2 style="font-style: italic; color: #a0522d; font-size: 1.5rem;">Let Your Home Glow with Color</h2>
 <p style="max-width: 700px; margin: 20px auto; font-size: 1.1rem; color: #333;">
           At asian chromatic, we understand that your home is more than just a place — it’s a reflection of your personality, your style, and your dreams.
@@ -114,9 +160,8 @@
 <footer>
     © 2025 asian chromatic. All Rights Reserved.
 <br/><div>Contact: 8013355990 | Address: Salap, Howrah, West Bengal</div></footer>
-  </footer>
 
-  <script>
+<script>
     const interiorShades = [
       { name: "whisper white", hex: "#f7f7fc" },
       { name: "blush pink", hex: "#ffcfcf" },
